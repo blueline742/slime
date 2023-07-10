@@ -1,0 +1,38 @@
+/* Reset the default margin and padding of the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+canvas#gameCanvas {
+  background-color: blue;
+}
+
+
+/* Style the slime element */
+#slime {
+  position: absolute; /* Position it relative to the parent element */
+  bottom: 10px; /* Place it 10px from the bottom edge */
+  left: 50%; /* Place it at the horizontal center */
+  transform: translate(-50%, 0); /* Adjust the position to account for the width of the element */
+  width: 100px; /* Set the width to 100px */
+  height: 10px; /* Set the height to 10px */
+  background-color: green; /* Set the background color to green */
+}
+
+/* Style the ball element */
+#ball {
+  position: absolute; /* Position it relative to the parent element */
+  bottom: 50%; /* Place it at the vertical center */
+  left: 50%; /* Place it at the horizontal center */
+  transform: translate(-50%, 50%); /* Adjust the position to account for the size of the element */
+  width: 20px; /* Set the width to 20px */
+  height: 20px; /* Set the height to 20px */
+  border-radius: 50%; /* Make it a circle by setting the border radius to half of the size */
+  background-color: red; /* Set the background color to red */
+}
